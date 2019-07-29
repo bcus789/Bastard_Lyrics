@@ -19,3 +19,8 @@ body{
 #return{
   margin: 20px;
 }
+.card{
+  background-image: url('./images/muddy.jpg') !important;
+  background-size: cover;
+  color: beige;
+}
