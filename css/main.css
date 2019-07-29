@@ -1,8 +1,11 @@
 #return {
   margin: 20px;
 }
-.nav {
+#refine {
   margin-left: 20px;
   background-color: rgba(0, 0, 0, 0.267);
   padding: 10px;
+}
+#authenticate {
+  margin-right: -30px;
 }
