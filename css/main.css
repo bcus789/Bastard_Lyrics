@@ -1,4 +1,4 @@
-#return {
+#topBar {
   margin: 20px;
 }
 #refine {
@@ -9,3 +9,10 @@
 #authenticate {
   margin-right: -30px;
 }
+body{
+  background-color: rgba(0, 0, 0, 0.644) !important;
+}
+.jumbotron{
+	background-image: url('./images/jumbo.jpg') !important;
+	background-size: cover;
+} 
