@@ -1,5 +1,5 @@
-#topBar {
-  margin: 20px;
+#signup {
+  margin-top:-50px;
 }
 #refine {
   margin-left: 20px;
@@ -23,4 +23,8 @@ body{
   background-image: url('./images/muddy.jpg') !important;
   background-size: cover;
   color: beige;
+}
+.brand-logo {
+  left: 0% !important;
+  transform: translateX(0%) !important;
 }
