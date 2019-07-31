@@ -28,3 +28,6 @@ body{
   left: 0% !important;
   transform: translateX(0%) !important;
 }
+#recommend{
+  margin-top: -30px !important;
+}
