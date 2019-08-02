@@ -13,8 +13,8 @@ body{
   background-color: rgba(0, 0, 0, 0.644) !important;
 }
 .jumbotron{
-	background-image: url('./images/jumbo.jpg') !important;
-	background-size: cover;
+	background-image: url('./images/jumbo.png') !important;
+  background-size: 100%;
 } 
 #return{
   margin: 20px;
@@ -29,5 +29,20 @@ body{
   transform: translateX(0%) !important;
 }
 #search {
-
+  color: rgb(219, 218, 218);
+}
+#recommend {
+  margin-top: -40px;
+  transform: translateX(0%) !important;
+}
+#searchBar {
+  margin-left:-20px;
+}
+#h1{
+  font-size: 48px;
+}
+#brand{
+  background: transparent !important;
+  margin-top:-70px;
+  color: aliceblue !important;
 }
