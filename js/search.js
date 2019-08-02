@@ -51,7 +51,7 @@ function songSearch() {
         lyricGet();
     })
 
-    $("#search").val().empty();
+    //$("#search").val().empty();
 }
 
 // listener to run the song search function when the submit button is clicked
