@@ -1,33 +1,59 @@
 #signup {
-  margin-top:-50px;
+  margin-top: -50px;
 }
+
 #refine {
   margin-left: 20px;
   background-color: rgba(0, 0, 0, 0.267);
   padding: 10px;
 }
+
 #authenticate {
   margin-right: -30px;
 }
-body{
+
+body {
   background-color: rgba(0, 0, 0, 0.644) !important;
 }
-.jumbotron{
-	background-image: url('./images/jumbo.jpg') !important;
-	background-size: cover;
-} 
-#return{
+
+.jumbotron {
+  background-image: url('./images/jumbo.jpg') !important;
+  background-size: cover;
+}
+
+#return {
   margin: 20px;
 }
-.card{
+
+.card {
   background-image: url('./images/muddy.jpg') !important;
   background-size: cover;
   color: beige;
 }
+
 .brand-logo {
   left: 0% !important;
   transform: translateX(0%) !important;
 }
-#search {
 
+#search {}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
