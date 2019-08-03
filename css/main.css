@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'edmondsans-bold';
+  src: url('edmondsans-bold-webfont.woff2') format('woff2'),
+       url('edmondsans-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+}
+@font-face {
+  font-family: 'abraham_lincolnregular';
+  src: url('typeface/abrahamlincoln-webfont.woff2') format('woff2'),
+       url('typeface/abrahamlincoln-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
 #signup {
   margin-right:-30px;
   margin-top: 10px;
@@ -19,6 +37,7 @@ body{
   background-repeat: no-repeat;
   background-position: center center;
   color: aliceblue;
+  text-align: left;
 } 
 #return{
   margin: 20px;
@@ -44,7 +63,7 @@ body{
   margin-top:-5px;
 }
 #h1{
-  font-size: 48px;
+  font-size: 38px;
 }
 #brand{
   background: transparent !important;
@@ -55,3 +74,10 @@ body{
   margin-top: 15px;
 
 }
+button {
+  height: 40px;
+  width: 80px;
+  background: linear-gradient(136.31deg, #1682FB -50.37%, #1A66BF 103.58%);
+  border-radius: 100px !important;
+  font-size: 15px !important;
+  }
