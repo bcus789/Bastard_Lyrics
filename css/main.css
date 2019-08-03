@@ -25,6 +25,13 @@ body {
   margin: 20px;
 }
 
+p,
+h5,
+h6 {
+  white-space: pre-line;
+  color: black;
+}
+
 .card {
   background-image: url('./images/muddy.jpg') !important;
   background-size: cover;

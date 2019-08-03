@@ -51,6 +51,7 @@ function songSearch(event) {
                 $("#return").append(`<div class="card bg-light mb-3" style="width: 394px;height:230px;">
                 <h5 class="card-header">${songArtist}</h5>
                 <div class="card-title">${songName}</div>
+                
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#lyrics">
                 Lyrics
                 </button>
@@ -58,8 +59,8 @@ function songSearch(event) {
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
-                             <h5 class="modal-title" id="songArtist">${songArtist}</h5><br>
-                             <h6 class="modal-title" id="songName">${songName}</h6>
+                             <h5 class="modal-title" id="songArtist">${songName}</h5><br>
+                             <h6 class="modal-title" id="songName">${songArtist}</h6>
                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                              </button>
