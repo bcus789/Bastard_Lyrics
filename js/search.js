@@ -51,11 +51,31 @@ function songSearch(event) {
                 $("#return").append(`<div class="card bg-light mb-3" style="width: 394px;height:230px;">
                 <h5 class="card-header">${songArtist}</h5>
                 <div class="card-title">${songName}</div>
-                <div class="overflow-auto" style="height: 150px width:150px;">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#lyrics">
                 Lyrics
-                </button></div>
-                </div>`)
+                </button>
+                <div class="modal fade" id="lyrics" tabindex="-1" role="dialog" aria-labelledby="lyricsLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                             <h5 class="modal-title" id="songArtist">${songArtist}</h5><br>
+                             <h6 class="modal-title" id="songName">${songName}</h6>
+                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                             </button>
+                            </div>
+                             <div class="modal-body">
+                              <p>
+                              ${response.result[0].lyrics}
+                              </p>
+                             </div>
+                            <div class="modal-footer">
+                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+        </div>`)
 
             })
         }
