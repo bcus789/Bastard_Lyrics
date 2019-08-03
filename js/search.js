@@ -48,6 +48,15 @@ function songSearch(event) {
 
                 //  console.log(response.result[0].lyrics) // the lyrics for the song
 
+                $("#return").append(`<div class="card bg-light mb-3" style="width: 394px;height:230px;">
+                <h5 class="card-header">${songArtist}</h5>
+                <div class="card-title">${songName}</div>
+                <div class="overflow-auto" style="height: 150px width:150px;">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Lyrics
+                </button></div>
+                </div>`)
+
             })
         }
         lyricGet();
