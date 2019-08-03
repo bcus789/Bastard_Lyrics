@@ -2,15 +2,18 @@
   margin-right:-30px;
   margin-top: 10px;
 }
+
 #refine {
   margin-left: 20px;
   background-color: rgba(0, 0, 0, 0.267);
   padding: 10px;
 }
+
 #authenticate {
   margin-right: -30px;
 }
-body{
+
+body {
   background-color: rgba(0, 0, 0, 0.644) !important;
 }
 .jumbotron{
@@ -23,11 +26,20 @@ body{
 #return{
   margin: 20px;
 }
-.card{
+
+p,
+h5,
+h6 {
+  white-space: pre-line;
+  color: black;
+}
+
+.card {
   background-image: url('./images/muddy.jpg') !important;
   background-size: cover;
   color: beige;
 }
+
 .brand-logo {
   left: 0% !important;
   transform: translateX(0%) !important;

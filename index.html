@@ -8,43 +8,56 @@
 
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 <title></title>
 
 <body>
-    
-    <div class="jumbotron" id="">
-      <nav class="navbar navbar-expand-md navbar-light bg-light" id="brand">
-        <a href="#" class="navbar-brand">
-            <img src="css/images/logo.png" id="logo">
-        </a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav">
-            </div>
-            <div class="navbar-nav ml-auto" id="signup">
-                <a href="#" class="nav-item nav-link" style="color: aliceblue">Login</a>
-                <button href="#" class="btn btn-primary">Sign Up</button>
-            </div>
-        </div>
-    </nav>
-        <div class="container-fluid" id="topBar">
-        <h1 class="display-4" id="h1">Never forget the lyrics again.</h1>
-        <p class="lead">Tired of making up your own words? The bastards have your back. </p>
-        <nav class="navbar navbar-light sm-light" id="searchBar">
-            <form class="form-inline">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="search">
-              <button class="btn btn-primary" type="submit" id="submit">Search</button>
-            </form>
-          </nav>
+  <div class="jumbotron" id="">
+    <nav class="nav-wrapper z-depth-0 transparent" id="signup">
+      <div class="nav-wrapper transparent">
+        <a href="#" class="brand-logo">Logo</a>
+        <ul id="nav" class="right">
+          <li><a href="badges.html">Login</a></li>
+          <li><a class="btn btn-success btn-sm">Signup</a></li>
+        </ul>
       </div>
+    </nav>
+    <div class="container-fluid" id="topBar">
+      <h1 class="display-4">Never forget the lyrics again.</h1>
+      <p class="lead">Tired of making up your own words? The bastards have your back. </p>
+      <form class="form-inline mr-auto">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" id="search">
+        <button class="btn btn-outline-success btn-rounded btn-sm my-0" type="submit" id="submit">Search</button>
+      </form>
     </div>
-        <div id="return">
-          <div class="row">
+  </div>
+  <nav class="nav-wrapper z-depth-0 transparent" id="recommend">
+    <div class="nav-wrapper">
+      <ul id="nav-mobile" class="left">
+        <li><a href="sass.html">Popular</a></li>
+        <li><a href="badges.html">Recent</a></li>
+        <li><a href="collapsible.html">Recommended</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row" id="return"></div>
+
+    <!-- <div class="row">
               <div class="col-sm-4">
                 <div class="card">
                   <div class="card-body">
@@ -104,13 +117,14 @@
                         </div>
                       </div>
                     </div>
-                </div>
-              </div>
-          
+                </div> -->
+
+  </div>
+
 
   <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="js/search.js"></script>
   <script src="js/plugins.js"></script>
