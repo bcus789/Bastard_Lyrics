@@ -80,4 +80,11 @@ button {
   background: linear-gradient(136.31deg, #1682FB -50.37%, #1A66BF 103.58%);
   border-radius: 100px !important;
   font-size: 15px !important;
-  }
+}
+  
+  p,
+h5,
+h6 {
+  white-space: pre-line;
+  color: black;
+}
