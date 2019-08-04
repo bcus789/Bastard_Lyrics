@@ -16,7 +16,7 @@
 body {
   background-color: rgba(0, 0, 0, 0.644) !important;
 }
-.jumbotron{
+#jumbo{
 	background-image: url('./images/jumbo.png') !important;
   background-size: cover;
   background-repeat: no-repeat;
@@ -38,11 +38,6 @@ h6 {
   background-image: url('./images/muddy.jpg') !important;
   background-size: cover;
   color: beige;
-}
-
-.brand-logo {
-  left: 0% !important;
-  transform: translateX(0%) !important;
 }
 #search {
   color: rgb(219, 218, 218);
@@ -66,4 +61,17 @@ h6 {
 #logo {
   margin-top: 15px;
 
+}
+p,
+h5,
+h6 {
+  white-space: pre-line;
+  color: black;
+}
+button {
+  height: 40px;
+  width: 80px;
+  background: linear-gradient(136.31deg, #1682FB -50.37%, #1A66BF 103.58%);
+  border-radius: 100px !important;
+  font-size: 15px !important;
 }

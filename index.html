@@ -21,21 +21,27 @@
 
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 <title></title>
 
 <body>
-  <div class="jumbotron" id="">
-    <nav class="nav-wrapper z-depth-0 transparent" id="signup">
-      <div class="nav-wrapper transparent">
-        <a href="#" class="brand-logo">Logo</a>
-        <ul id="nav" class="right">
-          <li><a href="badges.html">Login</a></li>
-          <li><a class="btn btn-success btn-sm">Signup</a></li>
-        </ul>
+  <div class="jumbotron" id="jumbo">
+    <nav class="navbar navbar-expand-md navbar-light bg-light" id="brand">
+      <a href="#" class="navbar-brand">
+          <img src="css/images/logo.png" id="logo">
+      </a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav">
+          </div>
+          <div class="navbar-nav ml-auto" id="signup">
+              <a href="#" class="nav-item nav-link" style="color: aliceblue">Login</a>
+              <button href="#" class="btn btn-primary">Sign Up</button>
+          </div>
       </div>
-    </nav>
+  </nav>
     <div class="container-fluid" id="topBar">
       <h1 class="display-4">Never forget the lyrics again.</h1>
       <p class="lead">Tired of making up your own words? The bastards have your back. </p>
@@ -45,15 +51,6 @@
       </form>
     </div>
   </div>
-  <nav class="nav-wrapper z-depth-0 transparent" id="recommend">
-    <div class="nav-wrapper">
-      <ul id="nav-mobile" class="left">
-        <li><a href="sass.html">Popular</a></li>
-        <li><a href="badges.html">Recent</a></li>
-        <li><a href="collapsible.html">Recommended</a></li>
-      </ul>
-    </div>
-  </nav>
   <div class="container-fluid">
     <div class="row" id="return"></div>
 
