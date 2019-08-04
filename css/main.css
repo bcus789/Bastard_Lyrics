@@ -49,11 +49,12 @@ h6 {
 h1{
   font-family: 'liberatorlight' !important;
   font-size: 38px;
-  color: aliceblue;
+  color: rgb(220, 237, 252);
   letter-spacing: 5PX;
+  margin-top: -30px;
 }
 #tired {
-  color: aliceblue;
+  color: rgb(88, 169, 240);
   font-family: 'edmondsansregular' !important;
 }
 #brand{
