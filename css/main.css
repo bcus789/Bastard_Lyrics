@@ -1,5 +1,5 @@
 #signup {
-  margin-right:-30px;
+  
   margin-top: -30px;
 }
 
@@ -55,7 +55,6 @@ h1{
   color: rgb(255, 255, 255);
   letter-spacing: 5PX;
   padding-bottom:10px;
-  margin-top: -30px;
   text-shadow:
   -2px -2px 0 rgba(0, 0, 0, 0.438),  
    2px -2px 0 rgba(0, 0, 0, 0.438),  
@@ -101,5 +100,5 @@ button {
 }
 #form{
   margin-top: 30px !important;
-  padding-bottom: 60px;
+  padding-bottom: 100px;
 }
