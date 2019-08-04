@@ -26,13 +26,15 @@ h6 {
 
 #refine{
   margin-top: -32px;
-  background-color: rgba(2, 2, 2, 0.541) !important;
+  background-color: rgba(2, 2, 2, 0.664) !important;
 }
 
 .nav-link {
   color: aliceblue !important;
-  margin-right: 20px !important;
+  margin-right: 5px !important;
+  margin-left: 25px !important;
   font-family: 'edmondsansregular' !important;
+  letter-spacing: 2px;
 }
 
 .card {
@@ -52,14 +54,15 @@ h1{
   font-size: 38px;
   color: rgb(220, 237, 252);
   letter-spacing: 5PX;
-  margin-top: 30px;
   padding-bottom:10px;
+  margin-top: -30px;
 }
 #tired {
   color: rgb(88, 169, 240);
   font-family: 'edmondsansregular' !important;
   margin-top: -20px;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
+  letter-spacing: 1px;
 }
 #brand{
   background: transparent !important;
@@ -88,4 +91,5 @@ button {
 }
 #form{
   margin-top: 30px !important;
+  padding-bottom: 60px;
 }
