@@ -56,6 +56,12 @@ h1{
   letter-spacing: 5PX;
   padding-bottom:10px;
   margin-top: -30px;
+  text-shadow:
+  -2px -2px 0 rgba(0, 0, 0, 0.26),  
+   2px -2px 0 rgba(0, 0, 0, 0.26), 
+   -2px 2px 0 rgba(0, 0, 0, 0.26), 
+    2px 2px 0 rgba(0, 0, 0, 0.26), 
+
 }
 #tired {
   color: rgb(88, 169, 240);
@@ -63,6 +69,10 @@ h1{
   margin-top: -20px;
   padding-bottom: 5px;
   letter-spacing: 1px;
+  -2px -2px 0 #000,  
+   2px -2px 0 #000,
+   -2px 2px 0 #000,
+    2px 2px 0 #000;
 }
 #brand{
   background: transparent !important;
