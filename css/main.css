@@ -46,12 +46,15 @@ h6 {
   margin-left:-20px;
   margin-top:-5px;
 }
-#h1{
+h1{
+  font-family: 'liberatorlight' !important;
   font-size: 38px;
-  font-weight: bold;
+  color: aliceblue;
+  letter-spacing: 5PX;
 }
 #tired {
   color: aliceblue;
+  font-family: 'edmondsansregular' !important;
 }
 #brand{
   background: transparent !important;
