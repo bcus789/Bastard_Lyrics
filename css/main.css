@@ -3,16 +3,6 @@
   margin-top: -30px;
 }
 
-#refine {
-  margin-left: 20px;
-  background-color: rgba(0, 0, 0, 0.267);
-  padding: 10px;
-}
-
-#authenticate {
-  margin-right: -30px;
-}
-
 body {
   background-color: rgba(0, 0, 0, 0.644) !important;
 }
@@ -34,6 +24,17 @@ h6 {
   color: black;
 }
 
+#refine{
+  margin-top: -32px;
+  background-color: rgba(2, 2, 2, 0.541) !important;
+}
+
+.nav-link {
+  color: aliceblue !important;
+  margin-right: 20px !important;
+  font-family: 'edmondsansregular' !important;
+}
+
 .card {
   background-image: url('./images/muddy.jpg') !important;
   background-size: cover;
@@ -47,17 +48,18 @@ h6 {
   margin-top:-5px;
 }
 h1{
-  font-family: 'edmondsansregular' !important; !important;
+  font-family: 'edmondsansregular' !important;
   font-size: 38px;
   color: rgb(220, 237, 252);
   letter-spacing: 5PX;
   margin-top: 30px;
+  padding-bottom:10px;
 }
 #tired {
   color: rgb(88, 169, 240);
   font-family: 'edmondsansregular' !important;
   margin-top: -20px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 #brand{
   background: transparent !important;
