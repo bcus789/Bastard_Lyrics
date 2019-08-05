@@ -1,7 +1,7 @@
 # Lyricbastard - lyric search app
 
 ---
-![logo](css/images/logo.png)
+![logo](css/images/logo2.png)
 ---
 
 ## The bastards have your back.
