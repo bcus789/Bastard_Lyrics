@@ -16,6 +16,7 @@
 body {
   background-color: rgba(0, 0, 0, 0.644) !important;
 }
+
 #jumbo{
 	background-image: url('./images/jumbo.png') !important;
   background-size: cover;
@@ -23,6 +24,7 @@ body {
   background-position: center center;
   color: aliceblue;
 } 
+
 #return{
   margin: 20px;
 }
@@ -38,14 +40,18 @@ h6 {
   background-image: url('./images/muddy.jpg') !important;
   background-size: cover;
   color: beige;
+  margin-right: 10px;
 }
+
 #search {
-  color: rgb(219, 218, 218);
+  color: black;
 }
+
 #searchBar {
   margin-left:-20px;
   margin-top:-5px;
 }
+
 h1{
   font-family: 'liberatorlight' !important;
   font-size: 38px;
@@ -53,15 +59,18 @@ h1{
   letter-spacing: 5PX;
   margin-top: -30px;
 }
+
 #tired {
   color: rgb(88, 169, 240);
   font-family: 'edmondsansregular' !important;
 }
+
 #brand{
   background: transparent !important;
   margin-top:-70px;
   color: aliceblue !important;
 }
+
 #logo {
   margin-top: -40px;
   margin-left: -18px
@@ -71,8 +80,9 @@ p,
 h5,
 h6 {
   white-space: pre-line;
-  color: black;
+  color: white;
 }
+
 button {
   height: 40px;
   width: 80px;
@@ -80,3 +90,21 @@ button {
   border-radius: 100px !important;
   font-size: 15px !important;
 }
+
+.modal-header {
+  display: block;
+}
+
+.modal-header .close {
+  margin: -3rem -1rem -1rem auto;
+}
+
+.modal-content {
+  background-color: black;
+}
+
+.card-title {
+  margin-left: 20px;
+  font-weight: bold;
+}
+
