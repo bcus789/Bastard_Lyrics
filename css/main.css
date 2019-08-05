@@ -1,16 +1,6 @@
 #signup {
-  margin-right:-30px;
+  
   margin-top: -30px;
-}
-
-#refine {
-  margin-left: 20px;
-  background-color: rgba(0, 0, 0, 0.267);
-  padding: 10px;
-}
-
-#authenticate {
-  margin-right: -30px;
 }
 
 body {
@@ -18,7 +8,7 @@ body {
 }
 
 #jumbo{
-	background-image: url('./images/jumbo.png') !important;
+	background-image: url('./images/jumbo6.jpg') !important;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -34,6 +24,19 @@ h5,
 h6 {
   white-space: pre-line;
   color: black;
+}
+
+#refine{
+  margin-top: -32px;
+  background-color: rgba(2, 2, 2, 0.664) !important;
+}
+
+.nav-link {
+  color: aliceblue !important;
+  margin-right: 5px !important;
+  margin-left: 25px !important;
+  font-family: 'edmondsansregular' !important;
+  letter-spacing: 2px;
 }
 
 .card {
@@ -53,16 +56,29 @@ h6 {
 }
 
 h1{
-  font-family: 'liberatorlight' !important;
+  font-family: 'edmondsansregular' !important;
   font-size: 38px;
-  color: rgb(220, 237, 252);
+  color: rgb(255, 255, 255);
   letter-spacing: 5PX;
-  margin-top: -30px;
+  padding-bottom:10px;
+  text-shadow:
+  -2px -2px 0 rgba(0, 0, 0, 0.438),  
+   2px -2px 0 rgba(0, 0, 0, 0.438),  
+   -2px 2px 0 rgba(0, 0, 0, 0.438),  
+    2px 2px 0 rgba(0, 0, 0, 0.438),  
+
 }
 
 #tired {
   color: rgb(88, 169, 240);
   font-family: 'edmondsansregular' !important;
+  margin-top: -20px;
+  padding-bottom: 5px;
+  letter-spacing: 1px;
+  -2px -2px 0 #000,  
+   2px -2px 0 #000,
+   -2px 2px 0 #000,
+    2px 2px 0 #000;
 }
 
 #brand{
@@ -85,10 +101,16 @@ h6 {
 
 button {
   height: 40px;
-  width: 80px;
-  background: linear-gradient(136.31deg, #1682FB -50.37%, #1A66BF 103.58%);
+  width: 90px;
   border-radius: 100px !important;
   font-size: 15px !important;
+  font-family: 'edmondsansregular' !important;
+  font-size: 15px!important;
+  letter-spacing: 2px;
+}
+#form{
+  margin-top: 30px !important;
+  padding-bottom: 100px;
 }
 
 .modal-header {

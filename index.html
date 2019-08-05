@@ -21,9 +21,9 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/typeface/stylesheet.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="css/typeface/stylesheet.css" type="text/css" charset="utf-8">
 </head>
-<title></title>
+<title>Lyric Bastard</title>
 
 <body>
   <div class="jumbotron" id="jumbo">
@@ -38,13 +38,14 @@
           <div class="navbar-nav">
           </div>
           <div class="navbar-nav ml-auto" id="signup">
-              <a href="#" class="nav-item nav-link" style="color: aliceblue">Login</a>
-              <button href="#" class="btn btn-primary">Sign Up</button>
+              <a href="#" class="nav-item nav-link" style="color: aliceblue" id="login">Login</a>
+              <button href="#" class="btn btn-info" id="register">Sign Up</button>
           </div>
       </div>
   </nav>
     <div class="container-fluid" id="topBar">
       <h1 class="display-4">NEVER FORGET THE LYRICS AGAIN</h1>
+
       <p class="lead" id="tired">Tired of making up your own words? The bastards have your back. </p>
       <form class="form-inline mr-auto">
         <input class="form-control mr-sm-2" type="text" placeholder="Search a song" aria-label="Search" id="search">
@@ -57,7 +58,6 @@
       <!-- cards appended here -->
     </div>
   </div>
-
 
   <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
