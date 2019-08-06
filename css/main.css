@@ -177,4 +177,8 @@ margin-left: 3px;
 #btnSignUp{
   font-size: 13px !important;
 }
+#divider{
+  margin-top:-40px;
+  background-color: rgb(51, 50, 50) !important;
+}
 
