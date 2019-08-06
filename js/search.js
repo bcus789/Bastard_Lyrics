@@ -16,7 +16,7 @@ function songSearch(event) {
 
     // grabbing the title of the song through our search input value
     name = $("#search").val().trim()
-
+    name2 = name.split(' ').join('')
 
     queryURL = 'https://ws.audioscrobbler.com/2.0/?method=track.search&track=' +
         name + '&api_key=39a411e939e5e26509aa56b72185ed54&format=json&limit=1'
@@ -53,7 +53,7 @@ function songSearch(event) {
                 var lyricId = songName.split(' ').join('');
                 //  console.log(response.result[0].lyrics) // the lyrics for the song
 
-                $("#return").append(`<div class="card bg-light mb-3" id="resultCard" style="width: 394px;height:230px;">
+                $("#return").append(`<div class="card bg-light mb-3" id="${name2}Card" style="width: 394px;height:230px;">
                 <h5 class="card-header">${songArtist}</h5>
                 <div class="card-title">${songName}</div>
                 
@@ -75,11 +75,12 @@ function songSearch(event) {
                               ${response.result[0].lyrics}
                               </p>
                              </div>
-                             <div id="youTubeVid">
                              
-                             </div>
+                             
+                             
                             <div class="modal-footer">
-                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <div id="yt${name2}"></div>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             </div>
                          </div>
                     </div>
@@ -91,7 +92,7 @@ function songSearch(event) {
         lyricGet();
     })
 
-    $("#search").val("");
+    //$("#search").val("");
 }
 
 // listener to run the song search function when the submit button is clicked

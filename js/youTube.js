@@ -19,14 +19,14 @@ function youtubeCall() {
     }).then(function (response) {
         console.log(response)
 
+        name = name.split(' ').join('')
 
-        var img = response.items[0].snippet.thumbnails.medium
+        var img = response.items[0].snippet.thumbnails.medium.url
         var vidId = response.items[0].id.videoId
-        console.log('img: ', img)
 
         // $("#return").append(`<div><img src="${img.url}"></div>`)
-        $('#resultCard').css("background-image", "url("+img.url+")");
-        $("#youTubeVid").append(`<iframe id="ytplayer" type="text/html" width="450" height="100"
+        $(`#${name}Card`).css("background-image", "url(" + img + ")");
+        $(`#yt${name}`).append(`<iframe id="ytplayer" type="text/html" width="250" height="100" style="margin-right: 100px;"
         src="https://www.youtube.com/embed/${vidId}" frameborder="0"></iframe>`)
         })
                 
