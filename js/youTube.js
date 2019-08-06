@@ -18,7 +18,7 @@ function youtubeCall() {
         url: queryURL,
         method: "GET"
     }).then(function (response) {
-        console.log(response)
+        //console.log(response)
 
         name = name.split(' ').join('')
 
@@ -30,6 +30,6 @@ function youtubeCall() {
         $(`#yt${name}`).append(`<iframe id="ytplayer" type="text/html" width="250" height="100" style="margin-right: 100px;"
         src="https://www.youtube.com/embed/${vidId}" frameborder="0"></iframe>`)
     })
-
+    $("#search").val('')
 }
 // $("#submit").on("click", songSearch)

@@ -27,7 +27,7 @@ function songSearch(event) {
     }).then(function (response) {
 
         var results = response.results
-        console.log(results)
+        //console.log(results)
         // takes the song name and puts it in a new variable
         var songName = results.trackmatches.track[0].name
         // takes the artist of the song and puts it in a new variable
@@ -38,7 +38,7 @@ function songSearch(event) {
 
             queryURL = 'https://audd.p.rapidapi.com/findLyrics?q=' +
                 songName + " " + songArtist
-            console.log(queryURL)
+            //console.log(queryURL)
             $.ajax({
                 url: (proxy + queryURL),
                 method: "GET",
@@ -48,9 +48,9 @@ function songSearch(event) {
                 }
             }).then(function (response) {
 
-                console.log(response)
+                //console.log(response)
                 // figure out where we are displaying the lyrics and how
-                var lyricId = songName.split(' ').join('');
+                var lyricId = songName.split(' ').join('').split('&').join('').split(',').join('').split('!').join('')
                 //  console.log(response.result[0].lyrics) // the lyrics for the song
 
                 $("#return").append(`<div class="card bg-light mb-3" id="${name2}Card" style="width: 394px;height:230px;">
