@@ -156,7 +156,8 @@ button {
 }
 #signUp{
   margin-top: -4px !important;
-  padding-bottom: -3px !important;
+  margin-left: 5px !important;
+  
   height: 30px;
   width: 90px;
   border-radius: 100px !important;
@@ -169,6 +170,8 @@ button {
 margin-bottom: 2px !important;
 padding-left: 20px;
 padding-bottom: 10px;
+padding-right: 5px !important;
+margin-left: 3px;
 }
 
 #btnSignUp{
