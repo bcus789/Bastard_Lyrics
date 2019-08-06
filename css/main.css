@@ -40,7 +40,7 @@ h6 {
 }
 
 .card {
-  background-image: url('./images/muddy.jpg') !important;
+  /* background-image: url('./images/muddy.jpg') !important; */
   background-size: cover;
   color: beige;
   margin-right: 10px;

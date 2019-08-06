@@ -1,71 +1,119 @@
 <!doctype html>
 <html class="no-js" lang="">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" href="css/reset.css">
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
-
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/typeface/stylesheet.css" type="text/css" charset="utf-8">
-</head>
-<title>Lyric Bastard</title>
-
-<body>
-  <div class="jumbotron" id="jumbo">
-    <nav class="navbar navbar-expand-md navbar-light bg-light" id="brand">
-      <a href="#" class="navbar-brand">
-          <img src="css/images/logo.png" id="logo">
-      </a>
-      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-          <div class="navbar-nav">
-          </div>
-          <div class="navbar-nav ml-auto" id="signup">
-              <a href="#" class="nav-item nav-link" style="color: aliceblue" id="login">Login</a>
-              <button href="#" class="btn btn-info" id="register">Sign Up</button>
-          </div>
-      </div>
-  </nav>
-    <div class="container-fluid" id="topBar">
-      <h1 class="display-4">NEVER FORGET THE LYRICS AGAIN</h1>
-
-      <p class="lead" id="tired">Tired of making up your own words? The bastards have your back. </p>
-      <form class="form-inline mr-auto">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search a song" aria-label="Search" id="search">
-        <button class="btn btn-primary btn-rounded btn-sm" type="submit" id="submit" >Search</button>
-      </form>
-    </div>
-  </div>
-  <div class="container-fluid">
-    <div class="row" id="return">
-      <!-- cards appended here -->
-    </div>
-  </div>
-
-  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="js/search.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-</body>
-
-</html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/reset.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+            </script>
+            <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+                integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+                <link rel="stylesheet" href="css/main.css">
+                <link rel="stylesheet" href="css/typeface/stylesheet.css" type="text/css" charset="utf-8">
+            </head>
+            <title>Lyric Bastard</title>
+            <body>
+                <div class="jumbotron" id="jumbo">
+                    <nav class="navbar navbar-expand-md navbar-light bg-light" id="brand">
+                        <a href="#" class="navbar-brand">
+                            <img src="css/images/logo.png" id="logo">
+                        </a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <div class="navbar-nav">
+                            </div>
+                            <div class="navbar-nav ml-auto" id="signup">
+                              <a href="#signInModal" role="button" class="btn btn-primary btn-lg" data-toggle="modal" id="signIn">Sing In</a>
+                              <div id="signInModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                                  <div class="modal-dialog">
+                                      <div class="modal-content">
+                                          <div class="modal-header">
+                                              <h3>Sign In</h3>
+                                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                          </div>
+                                          <div class="modal-body">
+                                              <form class="form" role="form" autocomplete="off" id="formLogin" novalidate="" method="POST">
+                                                  <div class="form-group">
+                                                      <label for="uname1">Username</label>
+                                                      <input type="text" class="form-control form-control-lg" name="uname2" id="uname2" placeholder="Enter your UserName" required="">
+                                                  </div>
+                                                  <div class="form-group">
+                                                      <label>Password</label>
+                                                      <input type="password" class="form-control form-control-lg" id="pwd2" placeholder="Enter your Password" required="" autocomplete="new-password">
+                                                  </div>
+                                                  <div class="form-group py-4">
+                                                      <button class="btn btn-outline-secondary btn-lg" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                                                      <button type="submit" class="btn btn-primary btn-lg float-right" id="btnSignIn" >Sign In</button>
+                                                  </div>
+                                              </form>
+                                              <div id="errorMsg" style="display: none">Invalid Log In</div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                                <a href="#signUpModal" role="button" class="btn btn-primary btn-lg" data-toggle="modal" id="signUp">Sing Up</a>
+                                <div id="signUpModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h3>Sign Up</h3>
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form class="form" role="form" autocomplete="off" id="formLogin" novalidate="" method="POST">
+                                                    <div class="form-group">
+                                                        <label for="uname1">Username</label>
+                                                        <input type="text" class="form-control form-control-lg" name="uname1" id="uname1" placeholder="Enter a UserName" required="">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Password</label>
+                                                        <input type="password" class="form-control form-control-lg" id="pwd1" placeholder="Enter a Password" required="" autocomplete="new-password">
+                                                    </div>
+                                                    <div class="form-group py-4">
+                                                        <button class="btn btn-outline-secondary btn-lg" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                                                        <button type="submit" class="btn btn-primary btn-lg float-right" id="btnSignUp" data-dismiss="modal">Sign Up</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="container-fluid" id="topBar">
+                        <h1 class="display-4">NEVER FORGET THE LYRICS AGAIN</h1>
+                        <p class="lead" id="tired">Tired of making up your own words? The bastards have your back. </p>
+                        <form class="form-inline mr-auto" id="searchForm" style="display: none">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Search a song" aria-label="Search" id="search">
+                            <button class="btn btn-primary btn-rounded btn-sm" type="submit" id="submit" >Search</button>
+                            
+                        </form>
+                        <div id="plsSignIn">Please Log In To Search</div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row" id="return">
+                        <!-- cards appended here -->
+                    </div>
+                </div>
+                <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+                <script src="js/login.js"></script>
+                <script src="js/youTube.js"></script>
+                <script src="js/search.js"></script>
+                <script src="js/plugins.js"></script>
+                <script src="js/main.js"></script>
+            </body>
+        </html>
