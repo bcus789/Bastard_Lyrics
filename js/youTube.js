@@ -11,7 +11,8 @@ function youtubeCall() {
     name = $("#search").val().trim()
 
 
-    queryURL = 'https://www.googleapis.com/youtube/v3/search?key=AIzaSyAOTZGphDucwnM6ekFwYXpRPsDwrUCatRY&part=id,snippet&q=' + name
+    queryURL = 'https://www.googleapis.com/youtube/v3/search?key=AIzaSyAOTZGphDucwnM6ekFwYXpRPsDwrUCatRY&part=id,snippet&q=' +
+        name + " music video"
 
     $.ajax({
         url: queryURL,
@@ -28,10 +29,7 @@ function youtubeCall() {
         $(`#${name}Card`).css("background-image", "url(" + img + ")");
         $(`#yt${name}`).append(`<iframe id="ytplayer" type="text/html" width="250" height="100" style="margin-right: 100px;"
         src="https://www.youtube.com/embed/${vidId}" frameborder="0"></iframe>`)
-        })
-                
-            }
-        // $("#submit").on("click", songSearch)
+    })
 
-
-        
+}
+// $("#submit").on("click", songSearch)

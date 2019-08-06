@@ -1,5 +1,5 @@
 #signup {
-  
+
   margin-top: -30px;
 }
 
@@ -7,15 +7,15 @@ body {
   background-color: rgba(0, 0, 0, 0.644) !important;
 }
 
-#jumbo{
-	background-image: url('./images/jumbo6.jpg') !important;
+#jumbo {
+  background-image: url('./images/jumbo6.jpg') !important;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   color: aliceblue;
-} 
+}
 
-#return{
+#return {
   margin: 20px;
 }
 
@@ -26,7 +26,7 @@ h6 {
   color: black;
 }
 
-#refine{
+#refine {
   margin-top: -32px;
   background-color: rgba(2, 2, 2, 0.664) !important;
 }
@@ -51,21 +51,21 @@ h6 {
 }
 
 #searchBar {
-  margin-left:-20px;
-  margin-top:-5px;
+  margin-left: -20px;
+  margin-top: -5px;
 }
 
-h1{
+h1 {
   font-family: 'edmondsansregular' !important;
   font-size: 38px;
   color: rgb(255, 255, 255);
   letter-spacing: 5PX;
-  padding-bottom:10px;
+  padding-bottom: 10px;
   text-shadow:
-  -2px -2px 0 rgba(0, 0, 0, 0.438),  
-   2px -2px 0 rgba(0, 0, 0, 0.438),  
-   -2px 2px 0 rgba(0, 0, 0, 0.438),  
-    2px 2px 0 rgba(0, 0, 0, 0.438),  
+    -2px -2px 0 rgba(0, 0, 0, 0.438),
+    2px -2px 0 rgba(0, 0, 0, 0.438),
+    -2px 2px 0 rgba(0, 0, 0, 0.438),
+    2px 2px 0 rgba(0, 0, 0, 0.438),
 
 }
 
@@ -74,24 +74,24 @@ h1{
   font-family: 'edmondsansregular' !important;
   margin-top: -20px;
   padding-bottom: 5px;
-  letter-spacing: 1px;
-  -2px -2px 0 #000,  
-   2px -2px 0 #000,
-   -2px 2px 0 #000,
+  letter-spacing: 1px,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
     2px 2px 0 #000;
 }
 
-#brand{
+#brand {
   background: transparent !important;
-  margin-top:-70px;
+  margin-top: -70px;
   color: aliceblue !important;
 }
 
 #logo {
   margin-top: -40px;
   margin-left: -18px
-
 }
+
 p,
 h5,
 h6 {
@@ -105,10 +105,11 @@ button {
   border-radius: 100px !important;
   font-size: 15px !important;
   font-family: 'edmondsansregular' !important;
-  font-size: 15px!important;
+  font-size: 15px !important;
   letter-spacing: 2px;
 }
-#form{
+
+#form {
   margin-top: 30px !important;
   padding-bottom: 100px;
 }
@@ -142,19 +143,20 @@ button {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #888;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
-#signUp{
+
+#signUp {
   margin-top: -4px !important;
   margin-left: 5px !important;
   height: 30px;
@@ -162,28 +164,29 @@ button {
   border-radius: 100px !important;
   font-size: 15px !important;
   font-family: 'edmondsansregular' !important;
-  font-size: 15px!important;
+  font-size: 15px !important;
   letter-spacing: 2px;
 }
-#signIn{
-margin-bottom: 2px !important;
-padding-left: 20px;
-padding-bottom: 10px;
-padding-right: 5px !important;
-margin-left: 3px;
+
+#signIn {
+  margin-bottom: 2px !important;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-right: 5px !important;
+  margin-left: 3px;
 }
 
-#btnSignUp{
+#btnSignUp {
   font-size: 13px !important;
 }
-#divider{
-  margin-top:-40px;
+
+#divider {
+  margin-top: -40px;
   background-color: rgb(51, 50, 50) !important;
 }
-#collapse{
+
+#collapse {
   background-color: rgb(97, 96, 96) !important;
   height: 40px;
   width: 50px;
 }
-
-
