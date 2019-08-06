@@ -157,9 +157,19 @@ button {
 #signUp{
   margin-top: -4px !important;
   margin-left: 10px;
+  padding-bottom: -3px !important;
+  height: 30px;
+  width: 90px;
+  border-radius: 100px !important;
+  font-size: 15px !important;
+  font-family: 'edmondsansregular' !important;
+  font-size: 15px!important;
+  letter-spacing: 2px;
 }
 #signIn{
 margin-bottom: 2px !important;
+padding-left: 15px;
+padding-bottom: 10px;
 }
 
 #btnSignUp{
