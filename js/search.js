@@ -48,7 +48,7 @@ function songSearch(event) {
 
                 //  console.log(response.result[0].lyrics) // the lyrics for the song
 
-                $("#return").append(`<div class="card bg-light mb-3" style="width: 394px;height:230px;">
+                $("#return").append(`<div class="card bg-light mb-3" id="resultCard" style="width: 394px;height:230px;">
                 <h5 class="card-header">${songArtist}</h5>
                 <div class="card-title">${songName}</div>
                 
@@ -70,6 +70,9 @@ function songSearch(event) {
                               ${response.result[0].lyrics}
                               </p>
                              </div>
+                             <div id="youTubeVid">
+                             
+                             </div>
                             <div class="modal-footer">
                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             </div>
@@ -77,7 +80,7 @@ function songSearch(event) {
                     </div>
                 </div>
         </div>`)
-
+                youtubeCall()
             })
         }
         lyricGet();
