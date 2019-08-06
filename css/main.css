@@ -154,3 +154,15 @@ button {
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
+#signUp{
+  margin-top: -4px !important;
+  margin-left: 10px;
+}
+#signIn{
+margin-bottom: 2px !important;
+}
+
+#btnSignUp{
+  font-size: 13px !important;
+}
+
