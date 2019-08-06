@@ -18,7 +18,7 @@ function songSearch(event) {
     name = $("#search").val().trim()
 
 
-    queryURL = 'http://ws.audioscrobbler.com/2.0/?method=track.search&track=' +
+    queryURL = 'https://ws.audioscrobbler.com/2.0/?method=track.search&track=' +
         name + '&api_key=39a411e939e5e26509aa56b72185ed54&format=json&limit=1'
 
     $.ajax({
