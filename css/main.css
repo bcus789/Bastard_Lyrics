@@ -157,7 +157,6 @@ button {
 #signUp{
   margin-top: -4px !important;
   margin-left: 5px !important;
-  
   height: 30px;
   width: 90px;
   border-radius: 100px !important;
@@ -180,5 +179,10 @@ margin-left: 3px;
 #divider{
   margin-top:-40px;
   background-color: rgb(51, 50, 50) !important;
+}
+#collapse{
+  background-color: #888 !important;
+  height: 40px;
+  width: 50px;
 }
 
