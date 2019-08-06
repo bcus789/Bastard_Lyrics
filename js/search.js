@@ -25,9 +25,9 @@ function songSearch(event) {
         url: queryURL,
         method: "GET"
     }).then(function (response) {
-        console.log(results)
+        
         var results = response.results
-
+        console.log(results)
         // takes the song name and puts it in a new variable
         var songName = results.trackmatches.track[0].name
         // takes the artist of the song and puts it in a new variable
@@ -36,12 +36,16 @@ function songSearch(event) {
         // using the information created above we now run another call into a lyric database
         function lyricGet() {
 
-            queryURL = 'https://api.audd.io/findLyrics/?q=' +
-                songName + " " + songArtist
+            queryURL = 'https://audd.p.rapidapi.com/findLyrics?q=' +
+                songName + " " + songArtist 
             console.log(queryURL)
             $.ajax({
                 url: (proxy + queryURL),
-                method: "GET"
+                method: "GET",
+                headers: {
+                    "X-RapidAPI-Host": "audd.p.rapidapi.com",
+                    "X-RapidAPI-Key": "110cfbb460msh761fb82b235ed59p1896bejsnfe1563698842"
+                }
             }).then(function (response) {
 
                 console.log(response)
