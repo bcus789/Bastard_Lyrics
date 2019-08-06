@@ -1,28 +1,20 @@
 #signup {
-  margin-right:-30px;
-  margin-top: 10px;
-}
-
-#refine {
-  margin-left: 20px;
-  background-color: rgba(0, 0, 0, 0.267);
-  padding: 10px;
-}
-
-#authenticate {
-  margin-right: -30px;
+  
+  margin-top: -30px;
 }
 
 body {
   background-color: rgba(0, 0, 0, 0.644) !important;
 }
-.jumbotron{
-	background-image: url('./images/jumbo.png') !important;
+
+#jumbo{
+	background-image: url('./images/jumbo6.jpg') !important;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   color: aliceblue;
 } 
+
 #return{
   margin: 20px;
 }
@@ -34,36 +26,107 @@ h6 {
   color: black;
 }
 
+#refine{
+  margin-top: -32px;
+  background-color: rgba(2, 2, 2, 0.664) !important;
+}
+
+.nav-link {
+  color: aliceblue !important;
+  margin-right: 5px !important;
+  margin-left: 25px !important;
+  font-family: 'edmondsansregular' !important;
+  letter-spacing: 2px;
+}
+
 .card {
   /* background-image: url('./images/muddy.jpg') !important; */
   background-size: cover;
   color: beige;
+  margin-right: 10px;
 }
 
-.brand-logo {
-  left: 0% !important;
-  transform: translateX(0%) !important;
-}
 #search {
-  color: rgb(219, 218, 218);
+  color: black;
 }
-#recommend {
-  margin-top: -40px;
-  transform: translateX(0%) !important;
-}
+
 #searchBar {
   margin-left:-20px;
   margin-top:-5px;
 }
-#h1{
-  font-size: 48px;
+
+h1{
+  font-family: 'edmondsansregular' !important;
+  font-size: 38px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 5PX;
+  padding-bottom:10px;
+  text-shadow:
+  -2px -2px 0 rgba(0, 0, 0, 0.438),  
+   2px -2px 0 rgba(0, 0, 0, 0.438),  
+   -2px 2px 0 rgba(0, 0, 0, 0.438),  
+    2px 2px 0 rgba(0, 0, 0, 0.438),  
+
 }
+
+#tired {
+  color: rgb(88, 169, 240);
+  font-family: 'edmondsansregular' !important;
+  margin-top: -20px;
+  padding-bottom: 5px;
+  letter-spacing: 1px;
+  -2px -2px 0 #000,  
+   2px -2px 0 #000,
+   -2px 2px 0 #000,
+    2px 2px 0 #000;
+}
+
 #brand{
   background: transparent !important;
   margin-top:-70px;
   color: aliceblue !important;
 }
+
 #logo {
-  margin-top: 15px;
+  margin-top: -40px;
+  margin-left: -18px
 
 }
+p,
+h5,
+h6 {
+  white-space: pre-line;
+  color: white;
+}
+
+button {
+  height: 40px;
+  width: 90px;
+  border-radius: 100px !important;
+  font-size: 15px !important;
+  font-family: 'edmondsansregular' !important;
+  font-size: 15px!important;
+  letter-spacing: 2px;
+}
+#form{
+  margin-top: 30px !important;
+  padding-bottom: 100px;
+}
+
+.modal-header {
+  display: block;
+}
+
+.modal-header .close {
+  margin: -3rem -1rem -1rem auto;
+}
+
+.modal-content {
+  background-color: black;
+}
+
+.card-title {
+  margin-left: 20px;
+  font-weight: bold;
+}
+

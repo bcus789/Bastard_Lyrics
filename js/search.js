@@ -25,7 +25,7 @@ function songSearch(event) {
         url: queryURL,
         method: "GET"
     }).then(function (response) {
-
+        console.log(results)
         var results = response.results
 
         // takes the song name and puts it in a new variable
@@ -43,24 +43,25 @@ function songSearch(event) {
                 url: (proxy + queryURL),
                 method: "GET"
             }).then(function (response) {
+
                 console.log(response)
                 // figure out where we are displaying the lyrics and how
-
+                var lyricId = songName.split(' ').join('');
                 //  console.log(response.result[0].lyrics) // the lyrics for the song
 
                 $("#return").append(`<div class="card bg-light mb-3" id="resultCard" style="width: 394px;height:230px;">
                 <h5 class="card-header">${songArtist}</h5>
                 <div class="card-title">${songName}</div>
                 
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#lyrics">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#${lyricId}" style="margin-left:300px;margin-top:90px;">
                 Lyrics
                 </button>
-                <div class="modal fade" id="lyrics" tabindex="-1" role="dialog" aria-labelledby="lyricsLabel" aria-hidden="true">
+                <div class="modal fade" id="${lyricId}" tabindex="-1" role="dialog" aria-labelledby="lyricsLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
-                             <h5 class="modal-title" id="songArtist">${songName}</h5><br>
-                             <h6 class="modal-title" id="songName">${songArtist}</h6>
+                             <h5 class="modal-title" class="songName">${songName}</h5><br>
+                             <h6 class="modal-title" class="songArtist">${songArtist}</h6>
                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                              </button>
@@ -86,7 +87,7 @@ function songSearch(event) {
         lyricGet();
     })
 
-    //$("#search").val().empty();
+    $("#search").val("");
 }
 
 // listener to run the song search function when the submit button is clicked
