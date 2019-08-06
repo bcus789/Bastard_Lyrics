@@ -25,7 +25,7 @@ function songSearch(event) {
         url: queryURL,
         method: "GET"
     }).then(function (response) {
-        
+
         var results = response.results
         console.log(results)
         // takes the song name and puts it in a new variable
@@ -37,7 +37,7 @@ function songSearch(event) {
         function lyricGet() {
 
             queryURL = 'https://audd.p.rapidapi.com/findLyrics?q=' +
-                songName + " " + songArtist 
+                songName + " " + songArtist
             console.log(queryURL)
             $.ajax({
                 url: (proxy + queryURL),
@@ -57,7 +57,7 @@ function songSearch(event) {
                 <h5 class="card-header">${songArtist}</h5>
                 <div class="card-title">${songName}</div>
                 
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#${lyricId}" style="margin-left:300px;margin-top:90px;">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#${lyricId}" style="margin-left:10px;margin-top:90px;">
                 Lyrics
                 </button>
                 <div class="modal fade" id="${lyricId}" tabindex="-1" role="dialog" aria-labelledby="lyricsLabel" aria-hidden="true">
