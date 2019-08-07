@@ -13,7 +13,7 @@ Wish you had a convenient place to look them up and listen at the same time? Tim
 * Search any song title
 * Get your results and enjoy
 
-
+[Check out the app here](https://bcus789.github.io/bastard_lyrics/)
 
 ---
 
