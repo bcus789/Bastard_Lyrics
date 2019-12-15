@@ -2,6 +2,8 @@
 
 ---
 ![logo](css/images/logo2.png)
+![Bastard](https://user-images.githubusercontent.com/47612529/70869528-cadbec80-1f40-11ea-92f5-fa8b1d5d0e60.PNG)
+
 ---
 
 ## The bastards have your back.
